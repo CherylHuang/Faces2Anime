@@ -82,8 +82,8 @@ stu1 : stu2 = 1-n : n
 
 ## Acknowledgement
 * The original research papers:
-    * Swapping Autoencoder for Deep Image Manipulation [[paper]](https://arxiv.org/abs/2007.00653) [[github]](https://github.com/taesungp/swapping-autoencoder-pytorch)
-    * Learning to Cartoonize Using White-box Cartoon Representations [[paper]](https://github.com/SystemErrorWang/White-box-Cartoonization/blob/master/paper/06791.pdf) [[github]](https://github.com/SystemErrorWang/White-box-Cartoonization)
+    * _Swapping Autoencoder for Deep Image Manipulation_ [[paper]](https://arxiv.org/abs/2007.00653) [[github]](https://github.com/taesungp/swapping-autoencoder-pytorch)
+    * _Learning to Cartoonize Using White-box Cartoon Representations_ [[paper]](https://github.com/SystemErrorWang/White-box-Cartoonization/blob/master/paper/06791.pdf) [[github]](https://github.com/SystemErrorWang/White-box-Cartoonization)
 * Face cartoonization for pre-processing [here](https://github.com/SystemErrorWang/FacialCartoonization).
 * The idea of this project is highly inspired from [naver-webtoon-faces](https://github.com/bryandlee/naver-webtoon-faces) by bryandlee.
 * Our code implementation is based on [swapping-autoencoder-pytorch](https://github.com/rosinality/swapping-autoencoder-pytorch) by rosinality.
@@ -92,4 +92,5 @@ stu1 : stu2 = 1-n : n
 ## License
 
 [![./imgs/Logo-NTUST.png](./imgs/Logo-NTUST.png)](https://www.ntust.edu.tw/home.php)  [![./imgs/Logo-GAMELab.png](./imgs/Logo-GAMELab.png)](http://gamelab.csie.ntust.edu.tw/)
+
 Copyright &copy; 2021 Cheryl Huang. All rights reserved.
