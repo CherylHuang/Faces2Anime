@@ -81,7 +81,7 @@ stu1 : stu2 = 1-n : n
 
 
 ## Acknowledgement
-* The original research papers:
+* The related research papers:
     * _Swapping Autoencoder for Deep Image Manipulation_ [[paper]](https://arxiv.org/abs/2007.00653) [[github]](https://github.com/taesungp/swapping-autoencoder-pytorch)
     * _Learning to Cartoonize Using White-box Cartoon Representations_ [[paper]](https://github.com/SystemErrorWang/White-box-Cartoonization/blob/master/paper/06791.pdf) [[github]](https://github.com/SystemErrorWang/White-box-Cartoonization)
 * Face cartoonization for pre-processing [here](https://github.com/SystemErrorWang/FacialCartoonization).
