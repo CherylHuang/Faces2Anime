@@ -3,7 +3,7 @@
 ![./imgs/tx_interpolation.PNG](./imgs/tx_interpolation.PNG)
 This project is aim to accomplish style transfer from human faces to anime / menga / cartoon styles.
 
-:warning: **Note:** This research project is still on going. Sorry but the source code is not available for now.
+**Note:** This research project is still on going. Sorry but the source code is not available for now.
 
 
 ## Results
@@ -64,6 +64,8 @@ stu1 : stu2 = 1-n : n
 
 
 ## Datasets
+:warning: **Warning:** All images are only used for research purpose. Prohibited for commercial use.
+
 ### Training data
 * **Anime**
     * Images randomly collected from [WEBTOON](https://www.webtoons.com/zh-hant/). (Total: 22,741; Titles: 128)
