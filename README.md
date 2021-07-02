@@ -3,8 +3,6 @@
 ![./imgs/tx_interpolation.PNG](./imgs/tx_interpolation.PNG)
 This project is aim to accomplish style transfer from human faces to anime / menga / cartoon styles.
 
-**Note:** This research project is still on going. Sorry but the source code is not available for now.
-
 
 ## Results
 ### Trained styles
