@@ -1,7 +1,7 @@
 # Faces2Anime
 ![./imgs/tx_interpolation.gif](./imgs/tx_interpolation.gif)
 ![./imgs/tx_interpolation.PNG](./imgs/tx_interpolation.PNG)
-This project is aim to accomplish style transfer from human faces to anime / menga / cartoon styles.
+This project is aim to accomplish style transfer from human faces to anime / manga / cartoon styles.
 
 
 ## Results
