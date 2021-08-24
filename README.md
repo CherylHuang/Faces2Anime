@@ -1,5 +1,5 @@
 # Faces2Anime
-## Cartoon Style Transfer in Faces using Generative Adversarial Networks
+## Cartoon Style Transfer in Faces using GANs
 [paper](http://etheses.lib.ntust.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=nx39pn/record?r1=1&h1=0) | [video](https://youtu.be/Pm6jFcl_nxk) | presentation
 
 ![./imgs/tx_interpolation.gif](./imgs/tx_interpolation.gif)
