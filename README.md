@@ -1,4 +1,7 @@
 # Faces2Anime
+## Cartoon Style Transfer in Faces using Generative Adversarial Networks
+[paper](http://etheses.lib.ntust.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=nx39pn/record?r1=1&h1=0) | [video](https://youtu.be/Pm6jFcl_nxk) | presentation
+
 ![./imgs/tx_interpolation.gif](./imgs/tx_interpolation.gif)
 ![./imgs/tx_interpolation.PNG](./imgs/tx_interpolation.PNG)
 This project is aim to accomplish style transfer from human faces to anime / manga / cartoon styles.
@@ -36,12 +39,18 @@ tx1 : tx2 = 1-n : n
 
 
 ### Structure interpolation
-Unfortunately, the success rate of interpolating structures is highly related to the similarity of facial features. The interpolation could easily fail as the diversity of features increased.
+Unfortunately, our model fail to interpolate structures as it can only be applied to texture semantic style transfer.
 ```
 Stu rate = n
 stu1 : stu2 = 1-n : n
 ```
 ![./imgs/stu_interpolation.PNG](./imgs/stu_interpolation.PNG)
+
+<br />
+
+Results with removing backgrounds using [removebg](https://www.remove.bg/zh).
+
+![./imgs/stu_interpolation2.PNG](./imgs/stu_interpolation2.PNG)
 
 
 ## Comparison
@@ -60,6 +69,22 @@ stu1 : stu2 = 1-n : n
 
 ![./imgs/comparison2.PNG](./imgs/comparison2.PNG)
 
+<br />
+
+* **Lighting preservation**
+
+![./imgs/comparison3.PNG](./imgs/comparison3.PNG)
+
+## Further Transformation
+### In-Domain GAN Inversion for Real Image Editing
+Zhu et al. 2020. [[paper]](https://arxiv.org/abs/2004.00049) [[github]](https://github.com/genforce/idinvert)
+
+![./imgs/further_in-domain.PNG](./imgs/further_in-domain.PNG)
+
+### Toonify!
+Justin Pinkney. 2020. [[web]](https://toonify.photos/)
+
+![./imgs/further_toonify.PNG](./imgs/further_toonify.PNG)
 
 ## Datasets
 :warning: **Warning:** All images are only used for research purpose. Prohibited for commercial use.
