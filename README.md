@@ -1,6 +1,6 @@
 # Faces2Anime
 ## Cartoon Style Transfer in Faces using GANs
-[paper](http://etheses.lib.ntust.edu.tw/cgi-bin/gs32/gsweb.cgi?o=dstdcdr&s=id=%22G0M10815032%22.&searchmode=basic) | [video](https://youtu.be/Pm6jFcl_nxk) | presentation
+[paper](https://drive.google.com/file/d/1RDCE9Vh-qo_KDapTL2BGo61hYMvvtF1A/view?usp=sharing) | [video](https://youtu.be/Pm6jFcl_nxk) | [slides](https://drive.google.com/file/d/1alsyNJ1gT1JAXikqMwOybJaGUcXXpHsL/view?usp=sharing) | online demo (TBA)
 
 ![./imgs/tx_interpolation.gif](./imgs/tx_interpolation.gif)
 ![./imgs/tx_interpolation.PNG](./imgs/tx_interpolation.PNG)
@@ -112,6 +112,34 @@ Justin Pinkney. 2020. [[web]](https://toonify.photos/)
 * Face cartoonization for pre-processing [here](https://github.com/SystemErrorWang/FacialCartoonization).
 * The idea of this project is highly inspired from [naver-webtoon-faces](https://github.com/bryandlee/naver-webtoon-faces) by bryandlee.
 * Our code implementation is based on [swapping-autoencoder-pytorch](https://github.com/rosinality/swapping-autoencoder-pytorch) by rosinality.
+
+
+## BibTeX Citation
+If you find this work useful for your research, please cite:
+* NDLTD in Taiwan (TBA)
+* [NTUST ETD](http://etheses.lib.ntust.edu.tw/cgi-bin/gs32/gsweb.cgi?o=dstdcdr&s=id=%22G0M10815032%22.&searchmode=basic)
+
+\< English version \>
+```
+@mastersthesis{huang2021cartoon,
+  author={Cheryl Huang},
+  title={Cartoon Style Transfer in Faces using Generative Adversarial Networks},
+  school={National Taiwan University of Science and Technology},
+  year={2021},
+  note={\url{http://etheses.lib.ntust.edu.tw/cgi-bin/gs32/gsweb.cgi?o=dstdcdr&s=id=%22G0M10815032%22.&searchmode=basic}}
+}
+```
+
+\< Chinese version \>
+```
+@mastersthesis{huang2021cartoon,
+  author={黃竹萱},
+  title={基於生成對抗網路之臉部卡通風格轉換},
+  school={國立臺灣科技大學資訊工程研究所},
+  year={2021},
+  note={\url{http://etheses.lib.ntust.edu.tw/cgi-bin/gs32/gsweb.cgi?o=dstdcdr&s=id=%22G0M10815032%22.&searchmode=basic}}
+}
+```
 
 
 ## License
