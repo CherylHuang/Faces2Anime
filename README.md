@@ -8,7 +8,7 @@ This project is aim to accomplish style transfer from human faces to anime / man
 
 
 ## How to Use
-> [!WARNING] 2026/03 update
+> [!WARNING]
 > Please note that this model is based on an earlier framework and the code may not be fully cleaned or optimized. It is intended for educational purposes and may not reflect current coding best practices or the most recent model iterations.
 
 ### Train
@@ -21,6 +21,10 @@ This project is aim to accomplish style transfer from human faces to anime / man
 
 ### Test
 You can test the models with the Jupyter Notebooks in the `/ipynb` folder.
+
+### Trained Models
+- [model34_010000.pt](https://drive.google.com/file/d/1Obzo-jXk1cGjQPfxHPnIKFjqHxAQ5IvT/view?usp=sharing)
+- [model42_150000.pt](https://drive.google.com/file/d/1rI0ra7AMis-gZ36_CkYE-1p0BveoROw7/view?usp=drive_link)
 
 
 ## Virtual Environment Setup (Anaconda)
