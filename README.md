@@ -2,32 +2,62 @@
 ## Cartoon Style Transfer in Faces using GANs
 [paper](https://drive.google.com/file/d/1RDCE9Vh-qo_KDapTL2BGo61hYMvvtF1A/view?usp=sharing) | [video](https://youtu.be/Pm6jFcl_nxk) | [slides](https://drive.google.com/file/d/1alsyNJ1gT1JAXikqMwOybJaGUcXXpHsL/view?usp=sharing)
 
-![./imgs/tx_interpolation.gif](./imgs/tx_interpolation.gif)
-![./imgs/tx_interpolation.PNG](./imgs/tx_interpolation.PNG)
+![./imgs/results/tx_interpolation.gif](./imgs/results/tx_interpolation.gif)
+![./imgs/results/tx_interpolation.PNG](./imgs/results/tx_interpolation.PNG)
 This project is aim to accomplish style transfer from human faces to anime / manga / cartoon styles.
+
+
+## How to Use
+> [!WARNING] 2026/03 update
+> Please note that this model is based on an earlier framework and the code may not be fully cleaned or optimized. It is intended for educational purposes and may not reflect current coding best practices or the most recent model iterations.
+
+### Train
+1. Clone the original [swapping-autoencoder-pytorch](https://github.com/rosinality/swapping-autoencoder-pytorch.git) repo.
+2. Overwrite the following Python files using the source code from the `/code` directory:
+    - `model.py` → `swapping-autoencoder-pytorch/model.py`
+    - `generate.py` → `swapping-autoencoder-pytorch/generate.py`
+    - `train_face_model31.py` or `train_face_model42.py` (choose one) → `swapping-autoencoder-pytorch/train.py`
+3. The same usage as the original repo.
+
+### Test
+You can test the models with the Jupyter Notebooks in the `/ipynb` folder.
+
+
+## Virtual Environment Setup (Anaconda)
+| <div align="center">Spec</div> |  |
+| :--- | :--- |
+| **OS** | ubuntu 16.04.5 LTS |
+| **GPU** | NVIDIA RTX 2080 * 4 |
+| **RAM** | >= 32G |
+| **CUDA** | 10.0.130 |
+| **Nvidia Driver** | >= 450.80.02 |
+| **CuDNN SDK** | 7.6.5 (for cuda10.0) |
+| **nccl** | 2.5.6 (for cuda10.0) |
+| **Python** | 3.6.12 |
+| **tensorlfow** | 1.14.0 |
 
 
 ## Results
 ### Trained styles
 The styles used below are from our training dataset.
 
-![./imgs/trained_style.PNG](./imgs/trained_style.PNG)
+![./imgs/results/trained_style.PNG](./imgs/results/trained_style.PNG)
 
-![./imgs/trained_style2.PNG](./imgs/trained_style2.PNG)
+![./imgs/results/trained_style2.PNG](./imgs/results/trained_style2.PNG)
 
 
 ### Un-trained styles
 The styles used below are randomly collected from the internet.
 
-![./imgs/un-trained_style.PNG](./imgs/un-trained_style.PNG)
+![./imgs/results/un-trained_style.PNG](./imgs/results/un-trained_style.PNG)
 
-![./imgs/un-trained_style2.PNG](./imgs/un-trained_style2.PNG)
+![./imgs/results/un-trained_style2.PNG](./imgs/results/un-trained_style2.PNG)
 
 
 ### Mean style transference
 `Mean style` denotes the mean of all texture codes of our training styles.
 
-![./imgs/mean_style_transfer.PNG](./imgs/mean_style_transfer.PNG)
+![./imgs/results/mean_style_transfer.PNG](./imgs/results/mean_style_transfer.PNG)
 
 
 ### Texture interpolation
@@ -35,7 +65,7 @@ The styles used below are randomly collected from the internet.
 Tx rate = n
 tx1 : tx2 = 1-n : n
 ```
-![./imgs/tx_interpolation2.PNG](./imgs/tx_interpolation2.PNG)
+![./imgs/results/tx_interpolation2.PNG](./imgs/results/tx_interpolation2.PNG)
 
 
 ### Structure interpolation
@@ -44,13 +74,13 @@ Unfortunately, our model fail to interpolate structures as it can only be applie
 Stu rate = n
 stu1 : stu2 = 1-n : n
 ```
-![./imgs/stu_interpolation.PNG](./imgs/stu_interpolation.PNG)
+![./imgs/results/stu_interpolation.PNG](./imgs/results/stu_interpolation.PNG)
 
 <br />
 
 Results with removing backgrounds using [removebg](https://www.remove.bg/zh).
 
-![./imgs/stu_interpolation2.PNG](./imgs/stu_interpolation2.PNG)
+![./imgs/results/stu_interpolation2.PNG](./imgs/results/stu_interpolation2.PNG)
 
 
 ## Comparison
@@ -65,26 +95,26 @@ Results with removing backgrounds using [removebg](https://www.remove.bg/zh).
     * original SwapAE [[paper]](https://arxiv.org/abs/2007.00653) [[github]](https://github.com/taesungp/swapping-autoencoder-pytorch)
     * WCT2 [[paper]](https://arxiv.org/abs/1903.09760) [[github]](https://github.com/clovaai/WCT2)
 
-![./imgs/comparison1.PNG](./imgs/comparison1.PNG)
+![./imgs/results/comparison1.PNG](./imgs/results/comparison1.PNG)
 
-![./imgs/comparison2.PNG](./imgs/comparison2.PNG)
+![./imgs/results/comparison2.PNG](./imgs/results/comparison2.PNG)
 
 <br />
 
 * **Lighting preservation**
 
-![./imgs/comparison3.PNG](./imgs/comparison3.PNG)
+![./imgs/results/comparison3.PNG](./imgs/results/comparison3.PNG)
 
 ## Further Transformation
 ### In-Domain GAN Inversion for Real Image Editing
 Zhu et al. 2020. [[paper]](https://arxiv.org/abs/2004.00049) [[github]](https://github.com/genforce/idinvert)
 
-![./imgs/further_in-domain.PNG](./imgs/further_in-domain.PNG)
+![./imgs/results/further_in-domain.PNG](./imgs/results/further_in-domain.PNG)
 
 ### Toonify!
 Justin Pinkney. 2020. [[web]](https://toonify.photos/)
 
-![./imgs/further_toonify.PNG](./imgs/further_toonify.PNG)
+![./imgs/results/further_toonify.PNG](./imgs/results/further_toonify.PNG)
 
 ## Datasets
 :warning: **Warning:** All images are only used for research purpose. Prohibited for commercial use.
@@ -144,6 +174,6 @@ If you find this work useful for your research, please cite:
 
 ## License
 
-[![./imgs/Logo-NTUST.png](./imgs/Logo-NTUST.png)](https://www.ntust.edu.tw/home.php)  [![./imgs/Logo-GAMELab.png](./imgs/Logo-GAMELab.png)](http://gamelab.csie.ntust.edu.tw/)
+[![./imgs/results/Logo-NTUST.png](./imgs/results/Logo-NTUST.png)](https://www.ntust.edu.tw/home.php)  [![./imgs/results/Logo-GAMELab.png](./imgs/results/Logo-GAMELab.png)](http://gamelab.csie.ntust.edu.tw/)
 
 Copyright &copy; 2021 Cheryl Huang. All rights reserved.
